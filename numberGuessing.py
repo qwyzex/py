@@ -1,11 +1,13 @@
 import random
+from qx.colors import color
 
 low = int(input("Lowest number: "))
 high = int(input("Highest number: "))
 
 num = random.randint(low, high)
 
-print(num)
+# cheat
+# print(num)
 
 guess = int(input("Guess: "))
 
@@ -13,17 +15,17 @@ done = False
 while not done:
     try:
         if guess == num:
-            print("Win")
+            print(color.GREEN, "Win", color.ENDC)
             done = True
         elif guess > num:
-            print("Too high")
+            print(color.YELLOW, "Too high", color.ENDC)
             guess = int(input("Guess: "))
         elif guess < num:
-            print("Too low")
+            print(color.YELLOW, "Too low", color.ENDC)
             guess = int(input("Guess: "))
         else:
-            print("Invalid Input")
+            print(color.RED, "Invalid Input", color.ENDC)
             guess = int(input("Guess: "))
     except:
-        print("Invalid")
+        print("Invalid Input")
         guess = int(input("Guess: "))
