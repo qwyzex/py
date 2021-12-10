@@ -1,4 +1,4 @@
-# Python Projects
+# Personal Public Python Project
 
 ## My personal python projects
 
