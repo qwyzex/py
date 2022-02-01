@@ -28,4 +28,4 @@ while not done:
             guess = int(input("\nGuess: "))
     except:
         print("Invalid Input")
-        guess = int(input("Guess: "))
+        guess = int(input("\nGuess: "))
