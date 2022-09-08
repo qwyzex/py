@@ -1,4 +1,4 @@
-from statistics import multimode
+from statistics import multimode, median_high, median_low
 
 raw = input("Array : ")
 
@@ -47,3 +47,5 @@ print('Total : ', total)
 print('Sorted : ', arr, '\n')
 print('Highest : ', highest)
 print('Lowest : ', lowest)
+print('Q1 : ', median_low(arr))
+print('Q3 : ', median_high(arr))
